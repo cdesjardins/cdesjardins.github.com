@@ -1,0 +1,55 @@
+    <div class="accordion">
+      <h3><a href="#">ARM software, FPGA interface development</a></h3>
+      <div>
+        I wanted to try my hand at an HDL, so I decided to build a robot that can
+        play simple songs on the piano. This project runs on the following hardware:
+        <ul>
+          <li><a href="http://gumstix.com">Gumstix overo</a></li>
+          <li><a href="http://knjn.com">Altera Cyclone-II (Pluto-3)</a></li>
+          <li><a href="http://www.linengineering.com/LinE/">2 Stepper motors</a></li>
+          <li><a href="http://futaba-rc.com">2 RC Servos</a></li>
+          <li><a href="http://www.st.com">4 l293b H-Bridges</a></li>
+        </ul>
+        <p/>
+        The code for this project is hosted on <a class="anchor" href="https://github.com/cdesjardins/PlayerPiano">github.</a>
+        <p/>
+        The idea here was to learn some VHDL, so I developed VHDL code (using quartus-II under linux) 
+        to drive both stepper motors, and servos. I created four 16bit registers in the FPGA which 
+        can be written from the gumstix overo ARM processor. Here is a high level over view of 
+        how the whole system works:
+        <ul>
+          <li>The ARM writes 8 gpios which are connected to input pins on the pluto-3 FPGA board.</li>
+          <li>The ARM then writes a "clock" gpio to cause the FPGA to latch the input pins.</li>
+          <li>Each register write is composed of the following three 8bit writes
+            <ol>
+              <li> is the register address.</li>
+              <li> is the low order byte of the data.</li>
+              <li> is the high order byte of the data.</li>
+            </ol>
+          </li>
+          <li>There are four registers, one for each stepper and servo.</li>
+          <li>Writes to a stepper register indicates how many steps to take relative to the current position.</li>
+          <li>Writes to a servo register indicates the pulse width to drive to the servo.</li>
+        </ul>
+        When it is all done the stepper motors will push or pull the servos down a small
+        gantry system so that the servo can then strike the correct piano key.
+        <p/>
+        The stepper motors are driven by the FPGA through the l293b H-Bridges from STMicroelectronics, 
+        the FPGA is setup so that four output pins are connected to the four H-Bridge input pins.
+        Then the four H-Bridge output pins are connected to the stepper motors, I found that the
+        steppers I have require about 1amp of current to run, and the H-Bridges
+        are rated for 1amp max, so I used two H-Bridges hooked up in parallel to drive one
+        stepper motor which effectively doubles the current the H-Bridges can handle.
+        <p/>
+        I also wrote code to program the FPGA from the gumstix overo, this makes the system
+        more user friendly because when the fpga is powered off it loses it's configuration.
+        There is a configurator/boot prom on the fpga board, but I didn't want to overwrite
+        the default configuration so I decided to write my own programming code instead.
+      </div>
+      <h3><a href="#">PlayerPiano video</a></h3>
+      <div>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/jQqlaYGPHF8?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jQqlaYGPHF8?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+        <p/>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/me8qFkZvMrg?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/me8qFkZvMrg?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+      </div>
+    </div>

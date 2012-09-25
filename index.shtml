@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link type="text/css" href="css/dark-hive/jquery-ui-1.8.23.custom.css" rel="Stylesheet" />	
+<link type="text/css" href="css/portfolio.css" rel="Stylesheet" />	
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script>
+$(function() {
+    $( ".accordion" ).accordion(
+    {
+        collapsible: true,
+        animated: 'bounceslide',
+        autoHeight: false,
+        active: false,
+    });
+    $( ".tabs" ).tabs(
+    {
+        fx: {  opacity: 'toggle' } 
+    });
+    $( ".anchor" ).button();
+});
+
+</script>
+<script type="text/javascript" src="http://static.getclicky.com/js"></script>
+<script type="text/javascript">try{ clicky.init(66371603); }catch(err){}</script>
+<title> 
+   Chris Desjardins - Online Portfolio
+</title>
+<link rel="icon" type="image/jpg" href="../favicon.ico" />
+</head>
+
+<body style="font-family:helvetica">
+<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/66371603ns.gif"/></p></noscript>
+<table border="0" width="800" class="centered ui-widget-content">
+  <tr>
+    <td  valign="top" colspan="2">
+      <img src="images/banner.png" alt="Home" usemap="#bannermap"/><br/><br/><br/>
+      <map name="bannermap">
+        <area shape="rect" coords="475,90,630,114" href="mailto:cjd@chrisd.info" alt="e-mail Chris D."   onmouseover="window.status = 'E-mail'; return true;" onmouseout="window.status = 'test'; return true;" />
+        <area shape="rect" coords="0,0,800,114" href="index.shtml" alt="Go to the chrisd.info home page" onmouseover="window.status = 'Home'; return true;" onmouseout="window.status = 'test'; return true;" />
+      </map>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:80px" valign="top">
+	  <a class="anchor" style="width: 100%" href="resume.pdf"                                   >Resume</a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="https://github.com/cdesjardins"               >GitHub</a><br/><br/>
+      <a class="anchor" style="width: 100%" href="http://www.linkedin.com/in/ChrisDesjardins"   >LinkedIn</a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="mailto:cjd@chrisd.info"                       >E-mail</a><br/><br/>
+	  <br/>
+    </td>
+    <td>
+      <table border="0">
+        <div class="tabs" style="width: 100%">
+          <ul>
+            <li><a href="#home">Home</a></li>
+    		<li><a href="#tekelec">Tekelec</a></li>
+		    <li><a href="#bops">BOPS</a></li>
+		    <li><a href="#beaglerc">Beagle RC</a></li>
+		    <li><a href="#playerpiano">Player Piano</a></li>
+		    <li><a href="#doorbell">Doorbell</a></li>
+          </ul>
+          <div id="home">
+              <!--#include file="indexsummary.shtml"-->
+          </div>
+          <div id="tekelec">
+              <!--#include file="indextekos.shtml"-->
+          </div>
+          <div id="bops">
+              <!--#include file="indexbops.shtml"-->
+          </div>
+          <div id="beaglerc">
+              <!--#include file="indexbeaglerc.shtml"-->          
+          </div>
+          <div id="playerpiano">
+              <!--#include file="indexplayerpiano.shtml"-->
+          </div>
+          <div id="doorbell">
+              <!--#include file="indexdoorbell.shtml"-->
+          </div>
+        </div>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

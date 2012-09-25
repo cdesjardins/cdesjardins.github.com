@@ -1,0 +1,32 @@
+    <div class="accordion">
+      <h3><a href="#">Arduino development</a></h3>
+      <div>
+        For my next project I thought it would be cool to make a custom made
+        doorbell for my house. I used the following items for this project:
+        <p/>
+        <ul>
+          <li>The cheapest glockenspiel I could find on e-bay.</li>
+          <li><a href="http://arduino.cc">Arduino Duemilanove</a></li>
+          <li><a href="http://www.st.com">2 l293b H-Bridges</a></li>
+          <li>8 small solenoids</li>
+        </ul>
+        <p/>
+        To get the system running just connect 8 outputs from the arduino to the 8 h-bridge inputs (two 
+        h-bridges gives 8 inputs, and 8 outputs). Then connect one wire from each solenoid to ground, 
+        and the other wire from each solenoid to an output from the h-bridges. At this point you can 
+        control all solenoids from the arduino. 
+        <p/>
+        To get the solenoids to work as a result of a doorbell ring, you must install some kind of button.
+        On the duemilanove all of the I/Os are floating, that is ok for the solenoids, but
+        for the button input a <a href="http://www.arduino.cc/en/Tutorial/Button">pull-down resistor</a> is needed. 
+        Once the button and pull down resistor are installed, an interrupt can be connected to the input line
+        on a rising edge and when it fires you know someone has pushed the doorbell which means it is time to 
+        play a tune.
+      </div>
+      <h3><a href="#">Doorbell video</a></h3>
+      <div>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/X3yo5z44HFA?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/X3yo5z44HFA?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+        <p/>
+        The code for this project is at <a class="anchor" href="https://github.com/cdesjardins/Doorbell">github.</a>
+      </div>
+    </div>

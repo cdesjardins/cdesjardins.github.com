@@ -1,0 +1,61 @@
+    <div class="accordion">      
+      <h3><a href="#">Real time embedded OS work</a></h3>
+      <div>
+        I participated in the development of a RTOS for an embedded DSP core
+        with a distributed memory architecture and many levels of parallelism.
+        The OS kernel was less than 700 words, but it had the ability to overlay code 
+        and data, schedule multiple concurrent threads, respond to I/O interrupts 
+        quickly, and it abstracted the DMA engine so the user did not have to 
+        write complex DMA transactions by hand.
+        <p/>My primary responsibilities were to help design and develop the host 
+        side component of the RTOS. The host component was basically an API that 
+        a programmer could use to perform various functions such as, load modules
+        on to the DSP core, communicate with the DSP, interrupt the DSP, perform
+        I/O with the DSP, and schedule threads for execution. Due to the fact
+        that the RTOS was going to be used with many different host environments I also
+        developed a very low level general I/O API that I ported to every 
+        host environment that BOPS supported (eCos, Windows, and Linux). This low
+        level API made it very easy to develop BOPS DSP applications (such as the RTOS)
+        that were targeted at more than one host system.
+        <p/>I also helped develop the tool used to compile the
+        <a href="images/glTrace.jpg"><img alt="Screenshot 1" src="images/glTrace-small.jpg" style="float:left;margin: 20px 20px"/></a>
+        binary image that was loaded onto the DSP core and executed. This tool
+        worked by reading all of the necessary data in the object files produced 
+        from compiling the core software. Then it produced a binary image with
+        all of the data from the object files formated in the way the 
+        DSP OS kernel expected.
+        <p/>As a side project I wrote a small interactive visualization application for this RTOS (screenshot 1).
+        It simply interpreted the binary image produced from the RTOS build tool
+        and displayed the memory regions in an OpenGL window. This was helpful
+        because the module memory regions were not relocatable, which meant that 
+        in order to use memory most efficiently the programmer had to make sure that
+        there were few memory spaces between modules (i.e. no memory fragmentation). This visualization
+        tool showed the module layout in memory, and any fragmentation was easily identified.
+        The programmer could then change the module layout to minimize the fragmentation.
+      </div>
+      <h3><a href="#">Examples of my 3D work</a></h3>
+      <div>
+        <p/>Below are some screenshots of 3D applications running on the BOPS DSP OpenGL
+        <a href="images/quake.jpg"><img alt="Screenshot 1" src="images/quake-small.jpg" style="float:left;margin: 20px 20px"/></a>
+        driver the Embedded Applications team developed.
+        They show our implementation of a highly optimized OpenGL driver running on 
+        a DSP core with many levels of parallelism. We did this by developing a dynamic
+        link library that directed all OpenGL calls to the BOPS DSP core for processing,
+        once the core was done processing the results of each frame were returned to the 
+        host computer where they were rasterized.
+        <p/>As a member of the Embedded Applications team I helped implement the
+        <a href="images/LightingAppMain.gif"><img alt="Screenshot 2a" src="images/LightingAppMain-small.gif" style="float:left;margin: 20px 20px"/></a>
+        OpenGL driver for the BOPS DSP. I was primarily responsible for the OpenGL 
+        lighting model (shown in screenshot 2a), but I also helped get Quake III (screenshot 1) running on 
+        the BOPS OpenGL driver. Once Quake was running I was responsible for maintaining
+        it on new releases of the BOPS SDK, and BOPS API.
+        <p/>Screenshot 2a shows the OpenGL lighting application in action, screenshot 2b
+        <a href="images/LightingAppConsole.jpg"><img alt="Screenshot 2b" src="images/LightingAppConsole-small.jpg" style="float:right;margin: 20px 20px"/></a>
+        shows the controls for all of the variables in the OpenGL lighting equation. I
+        developed this application to prove that BOPS could process all 8 of the lights
+        in the OpenGL spec. The 4 spheres in the top window danced around sinusoidally, 
+        and the 8 lights acted according to the settings in the lower window. The 
+        user could change any of the values in the control window and the OpenGL scene 
+        would be updated immediately.
+      </div>
+    </div>

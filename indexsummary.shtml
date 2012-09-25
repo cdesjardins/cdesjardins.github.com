@@ -1,0 +1,154 @@
+      My mission is to become part of an
+        intense software engineering team that will enable me to expand my
+        horizons, push my limits, and make a big impact.
+      <p/>
+      <div class="accordion">
+        <h3><a href="#">Pegamento, Software Engineer - Nieuwegein, NL</a></h3>
+        <div>
+          <ul>
+            <li>Member of a small team that develops &quot;glue&quot; software for process automation.</li>
+            <li>Met with customers to troubleshoot, debug and fix any problems with their process automation solutions.</li>
+            <li>Designed and developed a web based CRM development tool, for small to medium sized business with webservice, database, and legacy backend support.</li>
+          </ul>
+        </div>
+        <h3><a href="#">Tekelec, Application Engineer - Amsterdam, NL</a></h3>
+        <div>
+          <ul>
+            <li>Member of a team that developed Linux and Solaris applications to facilitate mobile messaging (SMS), and related services.</li>
+            <li>Developed next generation of subscriber database to manage 100 million subscribers in MySQL Cluster.</li>
+            <li>Enhance perl scripts used for automated regression test in order to improve robustness and code coverage.</li>
+          </ul>
+        </div>
+        <h3><a href="#">Tekelec, Embedded OS Software Engineer - Raleigh, NC</a></h3>
+        <div>
+          <ul>
+            <li>
+              Member of a 10-person team that is responsible for designing, developing,
+              testing, documenting and maintaining a number of real time operating
+              systems for a variety of embedded processors in C, Intel and ARM assembly;
+              including: Tekelec proprietary RTOS, VxWorks each running on systems from
+              the Intel 286 to the P4 Xeon, and Arm based IXP1250, IXP2350, and EP9312. 
+            </li>
+            <li>
+              Implemented a number of low level modules;
+              including: exception handlers/NMI, ISRs, SMBus interface, bootloader code,
+              in system programming for devices such as FPGAs, flash chips, and CPLDs,
+              and device drivers for 24 port Ethernet switch.
+            </li>
+            <li>
+              Designed a number of high-level modules; including: 
+              application error reporting interface, live system fail-safe
+              software upgrade, thermal management module (patent pending),
+              Inter-processor communication module, Multiprocessor File I/O device
+              driver.
+            </li>
+            <li>
+              Developed and maintained a core infrastructure test application;
+              this test application consisted of a server running on embedded vxworks
+              systems, and a MFC GUI client which communicates to the server over
+              Ethernet.
+            </li>
+            <li>
+              Collaborated with hardware team during board bring up for many new products.
+            </li>
+            <li>
+              Troubleshoot, fix bugs, and develop enhancements in many different areas of the OS code
+              base in both Rational ClearCase, and PVCS environments.
+            </li>
+          </ul>
+        </div>
+
+        <h3><a href="#">BOPS Inc., Embedded Applications Engineer - Raleigh, NC</a></h3>
+        <div>
+          <ul>
+            <li>
+              Part
+              of a team that developed and maintained a
+              multi-platform real time embedded DSP OS. My responsibilities included
+              RTOS design, host API design/development, compiler development, and system
+              verification.
+            </li>
+            <li>
+              Designed, developed, tested, and maintained 2D/3D applications on the BOPS DSP core
+              in assembly, such as OpenGL 3D lighting model, and a 3D rasterization
+              engine with perspective correct texture mapping.
+            </li>
+            <li>
+              Actively participated in many other projects through out the company including:
+              coding standards committee, documentation standards committee, swat team,
+              and the prototype team.
+            </li>
+          </ul>
+        </div>
+        
+        <h3><a href="#">BOPS Inc., Tool Set Developer - Raleigh, NC</a></h3>
+        <div>
+          <ul>
+            <li>
+              Part of a team that was responsible for developing, maintaining, and verifying the
+              BOPS DSP simulator, MFC debugger, GNU assembler, and other GNU utilities
+              targeted for the BOPS platform.
+            </li>
+            <li>
+              Helped develop and maintain directed test case generators in Tcl, to verify the
+              BOPS DSP simulator, and RTL.
+            </li>
+          </ul>
+        </div>
+        
+        <h3><a href="#">Linux projects</a></h3>
+        <div>
+          <ul>
+            <li>Beagle RC
+              <ul>
+                <li>
+                  Using a joystick on a host PC I wrote a client server application,
+                  that controls servos connected to a beagle board over wireless ethernet. 
+                </li>
+                <li>
+                  The beagle board is an embedded development platform that runs Angstrom embedded linux.
+                </li>
+                <li>
+                  To drive the servos I wrote a linux device driver
+                  which implements pulse width modulation in software.
+                </li>
+              </ul>
+            </li>
+            <li>PlayerPiano
+              <ul>
+                <li>
+                  Software running on a gumstix overo board control the movements of the steppers/servos through
+                  an FPGA interface.
+                </li>
+                <li>Stepper motors move servos up and down a small homemade gantry.</li>
+                <li>When the servo is in position it will then strike a key on a paino.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <h3><a href="#">Other information</a></h3>
+        <div>
+          <ul>
+            <li>North Carolina State University, Raleigh, NC (1996-2000)
+              <ul>
+                <li>Bachelor of Science in Computer Science.</li>
+                <li>Concentration in 3D/Stereo Graphics programming</li>
+              </ul>
+            </li>
+            <li>
+              <a class="anchor" href="patentapp.pdf">US Patent pending</a>Methods, systems and computer program products for thermal management of a processor associated with a network interface.
+            </li>
+            <li>
+              <a class="anchor" href="http://spie.org/x648.xml?product_id=430830">Publication</a>
+              MacAllister, David F; Desjardins, Christopher J. &quot;Geometric image
+              processing of stereo pairs.&quot; Proc. SPIE Vol. 4297, p. 317-327
+            </li>
+            <li>
+              Avid programmer, world traveler, motorcycle enthusiasts, mountain biker, and scuba diver.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
