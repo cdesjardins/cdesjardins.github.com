@@ -1,0 +1,492 @@
+Processing index.shtml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" >
+<link type="text/css" href="css/dark-hive/jquery-ui-1.8.23.custom.css" rel="Stylesheet" />	
+<link type="text/css" href="css/portfolio.css" rel="Stylesheet" />	
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script>
+$(function() {
+    {
+        $( ".accordion" ).accordion(
+        {
+            collapsible: true,
+            animated: 'bounceslide',
+            autoHeight: false,
+            active: false
+        });
+        $( ".tabs" ).tabs(
+        {
+            fx: {  opacity: 'toggle' } 
+        });
+        $( ".anchor" ).button();
+    }
+});
+
+</script>
+<script type="text/javascript" src="http://static.getclicky.com/js"></script>
+<script type="text/javascript">try{ clicky.init(66371603); }catch(err){}</script>
+<title> 
+   Chris Desjardins - Online Portfolio
+</title>
+<link rel="icon" type="image/jpg" href="../favicon.ico" />
+</head>
+
+<body style="font-family:helvetica">
+<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/66371603ns.gif"/></p></noscript>
+<div id="ieinsert"></div>
+<table border="0" width="800" class="centered ui-widget-content">
+  <tr>
+    <td  valign="top" colspan="2">
+      <img src="images/banner.png" alt="Home" usemap="#bannermap"/><br/><br/><br/>
+      <map name="bannermap">
+        <area shape="rect" coords="475,90,630,114" href="mailto:cjd@chrisd.info" alt="e-mail Chris D."   onmouseover="window.status = 'E-mail'; return true;" onmouseout="window.status = 'test'; return true;" />
+        <area shape="rect" coords="0,0,800,114" href="index.shtml" alt="Go to the chrisd.info home page" onmouseover="window.status = 'Home'; return true;" onmouseout="window.status = 'test'; return true;" />
+      </map>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+	  <a class="anchor" style="width: 100%" href="resume.pdf"                                   >Resume</a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="https://github.com/cdesjardins"               >GitHub</a><br/><br/>
+      <a class="anchor" style="width: 100%" href="http://www.linkedin.com/in/ChrisDesjardins"   >LinkedIn</a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="mailto:cjd@chrisd.info"                       >E-mail</a><br/><br/>
+	  <br/>
+    </td>
+    <td>
+      <table border="0">
+        <div class="tabs" style="width: 100%">
+          <ul>
+            <li><a href="#home">Home</a></li>
+    		<li><a href="#tekelec">Tekelec</a></li>
+		    <li><a href="#bops">BOPS</a></li>
+		    <li><a href="#beaglerc">BeagleRC</a></li>
+		    <li><a href="#playerpiano">RoboPiano</a></li>
+		    <li><a href="#doorbell">Doorbell</a></li>
+          </ul>
+          <div id="home">
+      My mission is to become part of an
+        intense software engineering team that will enable me to expand my
+        horizons, push my limits, and make a big impact.
+      <p/>
+      <div class="accordion">
+        <h3><a href="#">Pegamento, Software Engineer - Nieuwegein, NL</a></h3>
+        <div>
+          <ul>
+            <li>Member of a small team that develops &quot;glue&quot; software for process automation.</li>
+            <li>Met with customers to troubleshoot, debug and fix any problems with their process automation solutions.</li>
+            <li>Designed and developed a web based CRM development tool, for small to medium sized business with webservice, database, and legacy backend support.</li>
+          </ul>
+        </div>
+        <h3><a href="#">Tekelec, Application Engineer - Amsterdam, NL</a></h3>
+        <div>
+          <ul>
+            <li>Member of a team that developed Linux and Solaris applications to facilitate mobile messaging (SMS), and related services.</li>
+            <li>Developed next generation of subscriber database to manage 100 million subscribers in MySQL Cluster.</li>
+            <li>Enhance perl scripts used for automated regression test in order to improve robustness and code coverage.</li>
+          </ul>
+        </div>
+        <h3><a href="#">Tekelec, Embedded OS Software Engineer - Raleigh, NC</a></h3>
+        <div>
+          <ul>
+            <li>
+              Member of a 10-person team that is responsible for designing, developing,
+              testing, documenting and maintaining a number of real time operating
+              systems for a variety of embedded processors in C, Intel and ARM assembly;
+              including: Tekelec proprietary RTOS, VxWorks each running on systems from
+              the Intel 286 to the P4 Xeon, and Arm based IXP1250, IXP2350, and EP9312. 
+            </li>
+            <li>
+              Implemented a number of low level modules;
+              including: exception handlers/NMI, ISRs, SMBus interface, bootloader code,
+              in system programming for devices such as FPGAs, flash chips, and CPLDs,
+              and device drivers for 24 port Ethernet switch.
+            </li>
+            <li>
+              Designed a number of high-level modules; including: 
+              application error reporting interface, live system fail-safe
+              software upgrade, thermal management module (patent pending),
+              Inter-processor communication module, Multiprocessor File I/O device
+              driver.
+            </li>
+            <li>
+              Developed and maintained a core infrastructure test application;
+              this test application consisted of a server running on embedded vxworks
+              systems, and a MFC GUI client which communicates to the server over
+              Ethernet.
+            </li>
+            <li>
+              Collaborated with hardware team during board bring up for many new products.
+            </li>
+            <li>
+              Troubleshoot, fix bugs, and develop enhancements in many different areas of the OS code
+              base in both Rational ClearCase, and PVCS environments.
+            </li>
+          </ul>
+        </div>
+
+        <h3><a href="#">BOPS Inc., Embedded Applications Engineer - Raleigh, NC</a></h3>
+        <div>
+          <ul>
+            <li>
+              Part
+              of a team that developed and maintained a
+              multi-platform real time embedded DSP OS. My responsibilities included
+              RTOS design, host API design/development, compiler development, and system
+              verification.
+            </li>
+            <li>
+              Designed, developed, tested, and maintained 2D/3D applications on the BOPS DSP core
+              in assembly, such as OpenGL 3D lighting model, and a 3D rasterization
+              engine with perspective correct texture mapping.
+            </li>
+            <li>
+              Actively participated in many other projects through out the company including:
+              coding standards committee, documentation standards committee, swat team,
+              and the prototype team.
+            </li>
+          </ul>
+        </div>
+        
+        <h3><a href="#">BOPS Inc., Tool Set Developer - Raleigh, NC</a></h3>
+        <div>
+          <ul>
+            <li>
+              Part of a team that was responsible for developing, maintaining, and verifying the
+              BOPS DSP simulator, MFC debugger, GNU assembler, and other GNU utilities
+              targeted for the BOPS platform.
+            </li>
+            <li>
+              Helped develop and maintain directed test case generators in Tcl, to verify the
+              BOPS DSP simulator, and RTL.
+            </li>
+          </ul>
+        </div>
+        
+        <h3><a href="#">Linux projects</a></h3>
+        <div>
+          <ul>
+            <li>Beagle RC
+              <ul>
+                <li>
+                  Using a joystick on a host PC I wrote a client server application,
+                  that controls servos connected to a beagle board over wireless ethernet. 
+                </li>
+                <li>
+                  The beagle board is an embedded development platform that runs Angstrom embedded linux.
+                </li>
+                <li>
+                  To drive the servos I wrote a linux device driver
+                  which implements pulse width modulation in software.
+                </li>
+              </ul>
+            </li>
+            <li>PlayerPiano
+              <ul>
+                <li>
+                  Software running on a gumstix overo board control the movements of the steppers/servos through
+                  an FPGA interface.
+                </li>
+                <li>Stepper motors move servos up and down a small homemade gantry.</li>
+                <li>When the servo is in position it will then strike a key on a paino.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <h3><a href="#">Other information</a></h3>
+        <div>
+          <ul>
+            <li>North Carolina State University, Raleigh, NC (1996-2000)
+              <ul>
+                <li>Bachelor of Science in Computer Science.</li>
+                <li>Concentration in 3D/Stereo Graphics programming</li>
+              </ul>
+            </li>
+            <li>
+              <a class="anchor" href="patentapp.pdf">US Patent pending</a>Methods, systems and computer program products for thermal management of a processor associated with a network interface.
+            </li>
+            <li>
+              <a class="anchor" href="http://spie.org/x648.xml?product_id=430830">Publication</a>
+              MacAllister, David F; Desjardins, Christopher J. &quot;Geometric image
+              processing of stereo pairs.&quot; Proc. SPIE Vol. 4297, p. 317-327
+            </li>
+            <li>
+              Avid programmer, world traveler, motorcycle enthusiasts, mountain biker, and scuba diver.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+          </div>
+          <div id="tekelec">
+      <div class="accordion">      
+        <h3><a href="#">Tekelec RTOS work</a></h3>
+        <div>
+         At Tekelec I have had the chance to become very involved in the 
+         development of low-level software for the following platforms:
+         <ul>
+           <li>VxWorks Kernel, and BSP development</li>
+           <li>Proprietary OSs running on Arm based IXP1250, IXP2350, and EP9312 processors.</li>
+           <li>Proprietary OSs running on many different x86 processors</li>
+         </ul>
+         <a href="images/e5.jpg"><img alt="Screenshot 1" src="images/e5-small.jpg" style="float:left;margin: 20px 20px"/></a>
+         All of the above platforms ran on multi-processor distributed memory blades, which were part
+         of a larger distributed real time message passing system that implemented the Tekelec Eagle 5
+         platform which ran SS7 and related products such as SCCP, GTT, LNP, etc...
+        </div>
+        <h3><a href="#">My VxWorks software development</a></h3>
+        <div>
+        <ul>
+          <li>In system device programming (FPGA, CPLD, and Firmware hub)</li>
+          <li>ISR handlers for Thermal conditions, battery voltages, clocks, and other Tekelec specific events</li>
+          <li>SMBus interface routines</li>
+          <li>CPU Thermal monitor and management <a href="patentapp.pdf">(patent pending)</a></li>
+          <li>Application download</li>
+          <li>Failsafe file system on top of dosFs</li>
+          <li>Error handler/reporting application</li>
+          <li>Custom NMI handler</li>
+          <li>Boot loader</li>
+        </ul>
+        On all of the above projects (except the last two) I was the lead or sole engineer.
+        Because I played such a large role in the development of OS level code, I was the primary contact
+        for the hardware team during board bring up when software assistance was needed.<br/><br/>
+        </div>
+        <h3><a href="#">ARM Software development</a></h3>
+        <div>
+        I was able to develop software for many ARM processors, some software modules I worked on included:
+        <ul>
+          <li>CPU Interface code for Broadcom 5630 switch</li>
+          <li>Application download</li>
+          <li>Flash programming</li>
+          <li>LED Controller</li>
+          <li>Many other Tekelec specific modules</li>
+        </ul>
+        I was the sole engineer responsible for the Broadcom 5630 "light management interface", this was a major
+        software development effort and a considerable management risk because this was the first
+        time Tekelec had ever used a Broadcom switch in any product. However this project became 
+        widely heralded because it went so smoothly, and the code has proven to be quite stable.<br/><br/>
+        </div>
+        <h3><a href="#">Next generation development</a></h3>
+        <div>
+        I also took a lead role in the design and development of the next generation of tekelec products which
+        will be based on a dual core Intel platform. Because VxWorks does not fully support SMP we decided to 
+        come up with our own VxWorks based multiprocessor solution. To do this we compile two VxWorks kernels
+        and run one kernel on each core with a home grown shared memory inter-processor communication subsystem.
+        My responsibilities in this effort included:
+        <ul>
+          <li>Initial board bring up</li>
+          <li>Software architecture</li>
+          <li>Designed and developed shared memory communication subsystem</li>
+          <li>Designed and developed generic interrupt driven (IPI) inter-processor message passing mechanism</li>
+          <li>File I/O device driver which allowes both cores to share the same flash file system</li>
+        </ul>
+        </div>
+        <h3><a href="#">Test application - PktGen</a></h3>
+        <div>
+        Another development effort that I got to lead was a system test tool for the Tekelec signal transfer point (STP)
+        which enables Tekelc personnel to stress the backbone of the STP in a controlled fashion. The STP is basically 
+        a large distributed multiprocessor blade system, where each blade in the STP has two processors. One processor
+        is used for communication with other cards in the system, the second processor is used to run the application 
+        designed for that blade. One STP may contain blades with processors from the 286 all the way up to the latest
+        high speed Xeon and/or IXP processors. With this recent influx of powerful processors it has become very important
+        to verify that the communication backbone is capable of supporting the full gamut of Tekelec blades. Prior to my
+        start at Tekelec there was no way of thoroughly testing the communication backbone so I decided to take the initiative
+        to create such a test application. 
+        <br/><br/>
+        The test appication consists of the following components:
+        <ul>
+          <li>UDP socket based server which runs on both Linux and VxWorks</li>
+          <li>C++ dynamic link library (dll) which provides the Windows client side socket API</li>
+          <li>MFC GUI application which links with the dll and enables users to preform directed tests</li>
+          <li>Command line application which also links with the dll and enables users to write automated test cases with a simple single pass scripting language</li>
+        </ul>
+        This test tool was recently released for internal Tekelec useage, and is scheduled to ship to customer sites around Q3 2007.
+        <a href="images/pktgen.jpg"><img alt="Screenshot 1" src="images/pktgen-small.jpg" style="float:left;margin: 20px 20px"/></a>
+        </div>
+      </div>
+          </div>
+          <div id="bops">
+    <div class="accordion">      
+      <h3><a href="#">Real time embedded OS work</a></h3>
+      <div>
+        I participated in the development of a RTOS for an embedded DSP core
+        with a distributed memory architecture and many levels of parallelism.
+        The OS kernel was less than 700 words, but it had the ability to overlay code 
+        and data, schedule multiple concurrent threads, respond to I/O interrupts 
+        quickly, and it abstracted the DMA engine so the user did not have to 
+        write complex DMA transactions by hand.
+        <p/>My primary responsibilities were to help design and develop the host 
+        side component of the RTOS. The host component was basically an API that 
+        a programmer could use to perform various functions such as, load modules
+        on to the DSP core, communicate with the DSP, interrupt the DSP, perform
+        I/O with the DSP, and schedule threads for execution. Due to the fact
+        that the RTOS was going to be used with many different host environments I also
+        developed a very low level general I/O API that I ported to every 
+        host environment that BOPS supported (eCos, Windows, and Linux). This low
+        level API made it very easy to develop BOPS DSP applications (such as the RTOS)
+        that were targeted at more than one host system.
+        <p/>I also helped develop the tool used to compile the
+        <a href="images/glTrace.jpg"><img alt="Screenshot 1" src="images/glTrace-small.jpg" style="float:left;margin: 20px 20px"/></a>
+        binary image that was loaded onto the DSP core and executed. This tool
+        worked by reading all of the necessary data in the object files produced 
+        from compiling the core software. Then it produced a binary image with
+        all of the data from the object files formated in the way the 
+        DSP OS kernel expected.
+        <p/>As a side project I wrote a small interactive visualization application for this RTOS (screenshot 1).
+        It simply interpreted the binary image produced from the RTOS build tool
+        and displayed the memory regions in an OpenGL window. This was helpful
+        because the module memory regions were not relocatable, which meant that 
+        in order to use memory most efficiently the programmer had to make sure that
+        there were few memory spaces between modules (i.e. no memory fragmentation). This visualization
+        tool showed the module layout in memory, and any fragmentation was easily identified.
+        The programmer could then change the module layout to minimize the fragmentation.
+      </div>
+      <h3><a href="#">Examples of my 3D work</a></h3>
+      <div>
+        <p/>Below are some screenshots of 3D applications running on the BOPS DSP OpenGL
+        <a href="images/quake.jpg"><img alt="Screenshot 1" src="images/quake-small.jpg" style="float:left;margin: 20px 20px"/></a>
+        driver the Embedded Applications team developed.
+        They show our implementation of a highly optimized OpenGL driver running on 
+        a DSP core with many levels of parallelism. We did this by developing a dynamic
+        link library that directed all OpenGL calls to the BOPS DSP core for processing,
+        once the core was done processing the results of each frame were returned to the 
+        host computer where they were rasterized.
+        <p/>As a member of the Embedded Applications team I helped implement the
+        <a href="images/LightingAppMain.gif"><img alt="Screenshot 2a" src="images/LightingAppMain-small.gif" style="float:left;margin: 20px 20px"/></a>
+        OpenGL driver for the BOPS DSP. I was primarily responsible for the OpenGL 
+        lighting model (shown in screenshot 2a), but I also helped get Quake III (screenshot 1) running on 
+        the BOPS OpenGL driver. Once Quake was running I was responsible for maintaining
+        it on new releases of the BOPS SDK, and BOPS API.
+        <p/>Screenshot 2a shows the OpenGL lighting application in action, screenshot 2b
+        <a href="images/LightingAppConsole.jpg"><img alt="Screenshot 2b" src="images/LightingAppConsole-small.jpg" style="float:right;margin: 20px 20px"/></a>
+        shows the controls for all of the variables in the OpenGL lighting equation. I
+        developed this application to prove that BOPS could process all 8 of the lights
+        in the OpenGL spec. The 4 spheres in the top window danced around sinusoidally, 
+        and the 8 lights acted according to the settings in the lower window. The 
+        user could change any of the values in the control window and the OpenGL scene 
+        would be updated immediately.
+      </div>
+    </div>
+          </div>
+          <div id="beaglerc">
+    <div class="accordion">
+      <h3><a href="#">ARM linux device driver developement</a></h3>
+      <div>
+        The beagle board is a development platform with a TI OMAP3530 processor
+        which is based on the ARM Cortex-A8. I wrote an embedded linux device driver and application which drives 
+        servos from a remote PC over 802.11 with a joystick as the input device. One servo is connected to the X 
+        axis (steering servo), and the other to the Y axis (throttle servo).
+        </div>
+      <h3><a href="#">Beagle RC video</a></h3>
+      <div>
+        <p/>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/R9QkIgdTd38?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/R9QkIgdTd38?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+        <p/>
+        Full source for the driver and application code is available at <a class="anchor" href="https://github.com/cdesjardins/ServoDrive">github.</a>
+      </div>
+    </div>
+          </div>
+          <div id="playerpiano">
+    <div class="accordion">
+      <h3><a href="#">ARM software, FPGA interface development</a></h3>
+      <div>
+        I wanted to try my hand at an HDL, so I decided to build a robot that can
+        play simple songs on the piano. This project runs on the following hardware:
+        <ul>
+          <li><a href="http://gumstix.com">Gumstix overo</a></li>
+          <li><a href="http://knjn.com">Altera Cyclone-II (Pluto-3)</a></li>
+          <li><a href="http://www.linengineering.com/LinE/">2 Stepper motors</a></li>
+          <li><a href="http://futaba-rc.com">2 RC Servos</a></li>
+          <li><a href="http://www.st.com">4 l293b H-Bridges</a></li>
+        </ul>
+        <p/>
+        The code for this project is hosted on <a class="anchor" href="https://github.com/cdesjardins/PlayerPiano">github.</a>
+        <p/>
+        The idea here was to learn some VHDL, so I developed VHDL code (using quartus-II under linux) 
+        to drive both stepper motors, and servos. I created four 16bit registers in the FPGA which 
+        can be written from the gumstix overo ARM processor. Here is a high level over view of 
+        how the whole system works:
+        <ul>
+          <li>The ARM writes 8 gpios which are connected to input pins on the pluto-3 FPGA board.</li>
+          <li>The ARM then writes a "clock" gpio to cause the FPGA to latch the input pins.</li>
+          <li>Each register write is composed of the following three 8bit writes
+            <ol>
+              <li> is the register address.</li>
+              <li> is the low order byte of the data.</li>
+              <li> is the high order byte of the data.</li>
+            </ol>
+          </li>
+          <li>There are four registers, one for each stepper and servo.</li>
+          <li>Writes to a stepper register indicates how many steps to take relative to the current position.</li>
+          <li>Writes to a servo register indicates the pulse width to drive to the servo.</li>
+        </ul>
+        When it is all done the stepper motors will push or pull the servos down a small
+        gantry system so that the servo can then strike the correct piano key.
+        <p/>
+        The stepper motors are driven by the FPGA through the l293b H-Bridges from STMicroelectronics, 
+        the FPGA is setup so that four output pins are connected to the four H-Bridge input pins.
+        Then the four H-Bridge output pins are connected to the stepper motors, I found that the
+        steppers I have require about 1amp of current to run, and the H-Bridges
+        are rated for 1amp max, so I used two H-Bridges hooked up in parallel to drive one
+        stepper motor which effectively doubles the current the H-Bridges can handle.
+        <p/>
+        I also wrote code to program the FPGA from the gumstix overo, this makes the system
+        more user friendly because when the fpga is powered off it loses it's configuration.
+        There is a configurator/boot prom on the fpga board, but I didn't want to overwrite
+        the default configuration so I decided to write my own programming code instead.
+      </div>
+      <h3><a href="#">PlayerPiano video</a></h3>
+      <div>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/jQqlaYGPHF8?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jQqlaYGPHF8?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+        <p/>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/me8qFkZvMrg?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/me8qFkZvMrg?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+      </div>
+    </div>
+          </div>
+          <div id="doorbell">
+    <div class="accordion">
+      <h3><a href="#">Arduino development</a></h3>
+      <div>
+        For my next project I thought it would be cool to make a custom made
+        doorbell for my house. I used the following items for this project:
+        <p/>
+        <ul>
+          <li>The cheapest glockenspiel I could find on e-bay.</li>
+          <li><a href="http://arduino.cc">Arduino Duemilanove</a></li>
+          <li><a href="http://www.st.com">2 l293b H-Bridges</a></li>
+          <li>8 small solenoids</li>
+        </ul>
+        <p/>
+        To get the system running just connect 8 outputs from the arduino to the 8 h-bridge inputs (two 
+        h-bridges gives 8 inputs, and 8 outputs). Then connect one wire from each solenoid to ground, 
+        and the other wire from each solenoid to an output from the h-bridges. At this point you can 
+        control all solenoids from the arduino. 
+        <p/>
+        To get the solenoids to work as a result of a doorbell ring, you must install some kind of button.
+        On the duemilanove all of the I/Os are floating, that is ok for the solenoids, but
+        for the button input a <a href="http://www.arduino.cc/en/Tutorial/Button">pull-down resistor</a> is needed. 
+        Once the button and pull down resistor are installed, an interrupt can be connected to the input line
+        on a rising edge and when it fires you know someone has pushed the doorbell which means it is time to 
+        play a tune.
+      </div>
+      <h3><a href="#">Doorbell video</a></h3>
+      <div>
+        <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/X3yo5z44HFA?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/X3yo5z44HFA?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+        <p/>
+        The code for this project is at <a class="anchor" href="https://github.com/cdesjardins/Doorbell">github.</a>
+      </div>
+    </div>
+          </div>
+        </div>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
