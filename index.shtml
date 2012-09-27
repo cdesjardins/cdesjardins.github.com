@@ -3,24 +3,27 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" >
 <link type="text/css" href="css/dark-hive/jquery-ui-1.8.23.custom.css" rel="Stylesheet" />	
 <link type="text/css" href="css/portfolio.css" rel="Stylesheet" />	
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
 <script>
 $(function() {
-    $( ".accordion" ).accordion(
     {
-        collapsible: true,
-        animated: 'bounceslide',
-        autoHeight: false,
-        active: false,
-    });
-    $( ".tabs" ).tabs(
-    {
-        fx: {  opacity: 'toggle' } 
-    });
-    $( ".anchor" ).button();
+        $( ".accordion" ).accordion(
+        {
+            collapsible: true,
+            animated: 'bounceslide',
+            autoHeight: false,
+            active: false
+        });
+        $( ".tabs" ).tabs(
+        {
+            fx: {  opacity: 'toggle' } 
+        });
+        $( ".anchor" ).button();
+    }
 });
 
 </script>
@@ -34,6 +37,7 @@ $(function() {
 
 <body style="font-family:helvetica">
 <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/66371603ns.gif"/></p></noscript>
+<div id="ieinsert"></div>
 <table border="0" width="800" class="centered ui-widget-content">
   <tr>
     <td  valign="top" colspan="2">
@@ -45,7 +49,7 @@ $(function() {
     </td>
   </tr>
   <tr>
-    <td style="width:80px" valign="top">
+    <td valign="top">
 	  <a class="anchor" style="width: 100%" href="resume.pdf"                                   >Resume</a><br/><br/>
 	  <a class="anchor" style="width: 100%" href="https://github.com/cdesjardins"               >GitHub</a><br/><br/>
       <a class="anchor" style="width: 100%" href="http://www.linkedin.com/in/ChrisDesjardins"   >LinkedIn</a><br/><br/>
@@ -59,8 +63,8 @@ $(function() {
             <li><a href="#home">Home</a></li>
     		<li><a href="#tekelec">Tekelec</a></li>
 		    <li><a href="#bops">BOPS</a></li>
-		    <li><a href="#beaglerc">Beagle RC</a></li>
-		    <li><a href="#playerpiano">Player Piano</a></li>
+		    <li><a href="#beaglerc">BeagleRC</a></li>
+		    <li><a href="#playerpiano">RoboPiano</a></li>
 		    <li><a href="#doorbell">Doorbell</a></li>
           </ul>
           <div id="home">
