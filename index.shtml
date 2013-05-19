@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7" >
 <link type="text/css" href="css/dark-hive/jquery-ui-1.8.23.custom.css" rel="Stylesheet" />	
 <link type="text/css" href="css/portfolio.css" rel="Stylesheet" />	
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
 <script>
@@ -50,10 +51,10 @@ $(function() {
   </tr>
   <tr>
     <td valign="top">
-	  <a class="anchor" style="width: 100%" href="resume.pdf"                                   >Resume</a><br/><br/>
-	  <a class="anchor" style="width: 100%" href="https://github.com/cdesjardins"               >GitHub</a><br/><br/>
-      <a class="anchor" style="width: 100%" href="http://www.linkedin.com/in/ChrisDesjardins"   >LinkedIn</a><br/><br/>
-	  <a class="anchor" style="width: 100%" href="mailto:cjd@chrisd.info"                       >E-mail</a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="resume.pdf"                                   ><table border="0"><tr>Resume</tr><tr>&nbsp;<i class="icon-keyboard"></tr></table></i></a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="https://github.com/cdesjardins"               ><table border="0"><tr>GitHub</tr><tr>&nbsp;<i class="icon-github-sign"></tr></table></i></a><br/><br/>
+      <a class="anchor" style="width: 100%" href="http://www.linkedin.com/in/ChrisDesjardins"   ><table border="0"><tr>LinkedIn</tr><tr>&nbsp;<i class="icon-linkedin-sign"></tr></table></i></a><br/><br/>
+	  <a class="anchor" style="width: 100%" href="mailto:cjd@chrisd.info"                       ><table border="0"><tr>E-mail</tr><tr>&nbsp;<i class="icon-mail-reply"></tr></table></i></a><br/><br/>
 	  <br/>
     </td>
     <td>
